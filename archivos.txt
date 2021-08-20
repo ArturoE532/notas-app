@@ -8,6 +8,8 @@ mongoose            (manejar la bs de mongobd)
 passport            (metodo para autenticar el usuario)
 passport-local      (para usar ka bd local)
 
+morgan
+
 -D [dotenv              (para usar variables de entorno y las credenciales son unicas en un solo computador)
 nodemon             (reinicia el servidos automanticamente al hacer un cambio)
 npm-check-updates   (checa si hay actualizaciones en los modulos)
