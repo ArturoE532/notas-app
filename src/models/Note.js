@@ -3,14 +3,14 @@ const {Schema, model} = require('mongoose');
 const NoteSchema = new Schema({
     title: {
         type: String,
-        require: true
+        required:true
     },
     description: {
         type: String,
-        require: true
+        required: true
     },
 }, {
     timestamps: true
 })
 
-model.export = model('Note', NoteSchema);
+module.exports = model('Note', NoteSchema);
