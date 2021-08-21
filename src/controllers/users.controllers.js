@@ -1,0 +1,25 @@
+const { render } = require("../server");
+
+const usersCtrl = {};
+
+usersCtrl.renderSignupForm = (req , res) => {
+    res.render('users/signup');
+};
+
+usersCtrl.signup = (req, res) => {
+    res.send('signup');
+}
+
+usersCtrl.renderSignInForm = (req, res) => {
+    res.render('users/signin')
+}
+
+usersCtrl.signin = (req, res) => { 
+    res.send('signin');
+}
+
+usersCtrl.logout = (req, res) => {
+    res.send('logout');
+}
+
+module.exports = usersCtrl;
